@@ -4,6 +4,8 @@ USER root
 
 # Pipeline
 RUN jenkins-plugin-cli -p pipeline-stage-view && \
+#    jenkins-plugin-cli -p blueocean && \
+#    jenkins-plugin-cli -p publish-over-ssh && \
     jenkins-plugin-cli -p workflow-aggregator && \
     jenkins-plugin-cli -p github && \
     jenkins-plugin-cli -p ws-cleanup && \
